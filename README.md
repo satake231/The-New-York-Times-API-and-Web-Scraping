@@ -1,1 +1,1 @@
-# TheNewYorkTimesAPI-and-WebScraping
+# The-New-York-Times-API-and-Web-Scraping
