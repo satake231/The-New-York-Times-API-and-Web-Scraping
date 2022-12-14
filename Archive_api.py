@@ -5,7 +5,7 @@ from tqdm import tqdm
 #%%
 # エンドポイントへリクエスト
 # "2020/1"部分が年月の指定になっている
-api_endpoint = "https://api.nytimes.com/svc/archive/v1/2020/1.json?api-key=XKJP6DlmzSwBe5jGv8BaDs4An3Cgo1k1"
+api_endpoint = "https://api.nytimes.com/svc/archive/v1/2020/4.json?api-key=XKJP6DlmzSwBe5jGv8BaDs4An3Cgo1k1"
 
 res = requests.get(api_endpoint)
 
@@ -87,6 +87,7 @@ for i in tqdm(range(0, len(res_json['response']['docs']))):
                  res_json['response']['docs'][i]['pub_date'], res_json['response']['docs'][i]['headline']['print_headline'],
                  res_json['response']['docs'][i]['headline']['main'], tmp, res_json['response']['docs'][i]['news_desk'],
                  res_json['response']['docs'][i]['word_count'], res_json['response']['docs'][i]['snippet'],
-                 res_json['response']['docs'][i]['web-url']]
+                 res_json['response']['docs'][i]['web_url']]
 #%%
-print(df)
+df
+#%%
