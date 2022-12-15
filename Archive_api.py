@@ -89,5 +89,5 @@ for i in tqdm(range(0, len(res_json['response']['docs']))):
                  res_json['response']['docs'][i]['word_count'], res_json['response']['docs'][i]['snippet'],
                  res_json['response']['docs'][i]['web_url']]
 #%%
-df
+df.to_csv("./iris1.csv")
 #%%
