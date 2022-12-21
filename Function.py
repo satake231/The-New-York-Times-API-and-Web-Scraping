@@ -44,7 +44,7 @@ def get_articles(start_year, end_year, your_api_key):
 
             df.to_csv(path.format(year, month + 1))
 
-            time.sleep(0)
+            time.sleep(1)
 #%%
 
 #%%
